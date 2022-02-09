@@ -7,9 +7,12 @@ str1 = os.path.dirname(__file__)
 str2 = "resume.pdf"
 loc = str1 + "/" + str2
 
+firefox_path = str1 + "/../drivers/geckodriver"
 
 def web():
-    web_driver = webdriver.Chrome()
+    # web_driver = webdriver.Chrome()
+    web_driver = webdriver.Firefox(executable_path=firefox_path)
+
     url = 'https://lenoxexsearch.com/submit-resume/'
     web_driver.get('https://lenoxexsearch.com/submit-resume/')
 
@@ -31,11 +34,8 @@ def web():
     num = web_driver.find_element_by_xpath('// *[ @ id = "candidate_phone"]')
     num.send_keys(your_num)
 
-    # Will test these later
-    sample_file = open(loc, "rb")
-    upload_file = {"Uploaded file": sample_file}
-    r = requests.post(url, files=upload_file)
-
+    resume_file = web_driver.find_element_by_xpath('//*[@id="resume_file"]')
+    resume_file.send_keys(loc)
 
     #It will submit so dont uncomment
     # submit = web_driver.find_element_by_xpath('//*[@id="submit-resume-form"]/p/input[5]')
