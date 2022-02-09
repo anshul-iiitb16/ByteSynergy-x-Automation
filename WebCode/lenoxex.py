@@ -7,10 +7,14 @@ str1 = os.path.dirname(__file__)
 str2 = "resume.pdf"
 loc = str1 + "/" + str2
 
+#if not using firefox Comment this out this is for firefox
 firefox_path = str1 + "/../drivers/geckodriver"
 
 def web():
+    #Uncomment this line to use Chrome
     # web_driver = webdriver.Chrome()
+    
+    #if not using firefox Comment this out this is for firefox
     web_driver = webdriver.Firefox(executable_path=firefox_path)
 
     url = 'https://lenoxexsearch.com/submit-resume/'
