@@ -4,6 +4,33 @@ import time
 import os
 from selenium.webdriver.common.by import By
 
+def scroll():
+	initialScroll = 0
+	finalScroll = 1000
+	start = time.time()
+
+	while True:
+		driver.execute_script(f"window.scrollTo({initialScroll},{finalScroll})")
+		# this command scrolls the window starting from
+		# the pixel value stored in the initialScroll
+		# variable to the pixel value stored at the
+		# finalScroll variable
+		initialScroll = finalScroll
+		finalScroll += 1000
+
+		# we will stop the script for 3 seconds so that
+		# the data can load
+		time.sleep(3)
+		# You can change it as per your needs and internet speed
+
+		end = time.time()
+
+		# We will scroll for 20 seconds.
+		# You can change it as per your needs and internet speed
+		if round(end - start) > 20:
+			break
+
+
 str1 = os.getcwd()
 str2 = "chromedriver"
 loc = str1 + "/" + str2
@@ -25,7 +52,7 @@ username = driver.find_element_by_id("username")
 # tag used here.
 
 # Enter Your Email Address
-username.send_keys("")
+username.send_keys("codetest1011@gmail.com")
 
 # entering password
 pword = driver.find_element_by_id("password")
@@ -33,7 +60,7 @@ pword = driver.find_element_by_id("password")
 # tag used here.
 
 # Enter Your Password
-pword.send_keys("")
+pword.send_keys("Codetest@1011")
 
 # Clicking on the log in button
 # Format (syntax) of writing XPath -->
@@ -41,36 +68,12 @@ pword.send_keys("")
 driver.find_element_by_xpath("//button[@type='submit']").click()
 # In case of an error, try changing the
 # XPath used here.
-profile_url = "https://www.linkedin.com/in/shreeyav/"		#"https://www.linkedin.com/in/mayank1609/"
+profile_url = "https://www.linkedin.com/in/mayank1609/"	#"https://www.linkedin.com/in/anshul-jindal-420109230/"  # "https://www.linkedin.com/in/mayank1609/" 	#"https://www.linkedin.com/in/shreeyav/"
   
 driver.get(profile_url)
 
-start = time.time()
-
 # will be used in the while loop
-initialScroll = 0
-finalScroll = 1000
-
-while True:
-	driver.execute_script(f"window.scrollTo({initialScroll},{finalScroll})")
-	# this command scrolls the window starting from
-	# the pixel value stored in the initialScroll
-	# variable to the pixel value stored at the
-	# finalScroll variable
-	initialScroll = finalScroll
-	finalScroll += 1000
-
-	# we will stop the script for 3 seconds so that
-	# the data can load
-	time.sleep(3)
-	# You can change it as per your needs and internet speed
-
-	end = time.time()
-
-	# We will scroll for 20 seconds.
-	# You can change it as per your needs and internet speed
-	if round(end - start) > 20:
-		break
+scroll()
 
 src = driver.page_source
 
@@ -105,9 +108,142 @@ print('Roles: ', Roles)
 #print('Company: ', company)
 #print('College: ', college)
 print('Location: ', location)
-#print('URL: ', linkedin_url)
 print('\n')
 
+Common = soup.find_all("section", {"class": "artdeco-card ember-view break-words pb3 mt4"})
+
+for i in range(len(Common)):
+	if(Common[i].find("div", {"id": "experience"}) and Common[i].find("div", {"class": "pv-profile-card-anchor"})):
+		driver.get(profile_url)
+		scroll()
+		src = driver.page_source
+
+		soup = BeautifulSoup(src, 'lxml')
+		time.sleep(5)
+
+		Experience_loc = Common[i].find("ul", {"class": "pvs-list ph5 display-flex flex-row flex-wrap"})
+		Experience_loc_0 = Experience_loc.find_all("li", {"class": "artdeco-list__item pvs-list__item--line-separated pvs-list__item--one-column"})
+
+		Experiences = []
+		for j in range(len(Experience_loc_0)):
+			Experiences.append([])
+			Experience_loc_1 = Experience_loc_0[j].find_all("span", {"aria-hidden": "true"})
+
+			for k in range(len(Experience_loc_1)):
+				Experiences[j].append(Experience_loc_1[k].get_text().strip())
+
+		print("Experiences:", Experiences)
+
+	if (Common[i].find("div", {"id": "education"}) and Common[i].find("div", {"class": "pv-profile-card-anchor"})):
+		driver.get(profile_url)
+		scroll()
+		src = driver.page_source
+
+		soup = BeautifulSoup(src, 'lxml')
+		time.sleep(5)
+
+		Education_loc = Common[i].find("ul", {"class": "pvs-list ph5 display-flex flex-row flex-wrap"})
+		Education_loc_0 = Education_loc.find_all("li", {
+			"class": "artdeco-list__item pvs-list__item--line-separated pvs-list__item--one-column"})
+
+		Qualifications = []
+		for j in range(len(Education_loc_0)):
+			Qualifications.append([])
+			Education_loc_1 = Education_loc_0[j].find_all("span", {"aria-hidden": "true"})
+
+			for k in range(len(Education_loc_1)):
+				Qualifications[j].append(Education_loc_1[k].get_text().strip())
+
+		print("Qualifications:", Qualifications)
+
+	if (Common[i].find("div", {"id": "skills"}) and Common[i].find("div", {"class": "pv-profile-card-anchor"})):
+		is_Futher = Common[i].find("div", {"class": "pvs-list__footer-wrapper"})
+
+		if(is_Futher):
+			Skill_link = profile_url + "details/skills/"
+			driver.get(Skill_link)
+			scroll()
+			src = driver.page_source
+
+			# Now using beautiful soup
+			soup1 = BeautifulSoup(src, 'lxml')
+			time.sleep(5)
+
+			Skills_list_loc = soup1.find("ul", {"class": "pvs-list"})
+			Skills_list_loc_1 = Skills_list_loc.find_all("span", {"aria-hidden": "true"})
+
+			Skills_list = []
+			for j in range(len(Skills_list_loc_1)):
+				Skills_list.append(Skills_list_loc_1[j].get_text().strip())
+
+			print("List of Skills:", Skills_list)
+		else:
+			driver.get(profile_url)
+			scroll()
+			src = driver.page_source
+
+			soup = BeautifulSoup(src, 'lxml')
+			time.sleep(5)
+
+			Skills_list_loc = Common[i].find("ul", {"class": "pvs-list ph5"})
+			Skills_list_loc_1 = Skills_list_loc.find_all("span", {"aria-hidden": "true"})
+
+			Skills_list = []
+			for j in range(len(Skills_list_loc_1)):
+				Skills_list.append(Skills_list_loc_1[j].get_text().strip())
+
+			print("List of Skills:", Skills_list)
+
+	if (Common[i].find("div", {"id": "projects"}) and Common[i].find("div", {"class": "pv-profile-card-anchor"})):
+		is_Futher = Common[i].find("div", {"class": "pvs-list__footer-wrapper"})
+
+		if(is_Futher):
+			Project_link = profile_url + "details/projects/"
+			driver.get(Project_link)
+			scroll()
+			src = driver.page_source
+
+			# Now using beautiful soup
+			soup2 = BeautifulSoup(src, 'lxml')
+			time.sleep(5)
+
+			Projects_loc = soup2.find("ul", {"class": "pvs-list"})
+			Projects_list_loc_1 = Projects_loc.find_all("li", {"class": "pvs-list__paged-list-item artdeco-list__item pvs-list__item--line-separated"})
+			print(len(Projects_list_loc_1))
+			Projects = []
+
+			for j in range(len(Projects_list_loc_1)):
+				Projects_list_loc_2 = Projects_list_loc_1[j].find_all("span", {"aria-hidden": "true"})
+
+				Projects.append([])
+				for k in range(len(Projects_list_loc_2)):
+					Projects[j].append(Projects_list_loc_2[k].get_text().strip())
+
+			for j in range(len(Projects)):
+				print(Projects[j])
+		else:
+			driver.get(profile_url)
+			scroll()
+			src = driver.page_source
+
+			soup = BeautifulSoup(src, 'lxml')
+			time.sleep(5)
+
+			Projects_loc = Common[i].find("ul", {"class": "pvs-list ph5 display-flex flex-row flex-wrap"})
+			Projects_list_loc_1 = Projects_loc.find_all("li", {"class": "artdeco-list__item pvs-list__item--line-separated pvs-list__item--one-column"})
+
+			print(len(Projects_list_loc_1))
+			Projects = []
+
+			for j in range(len(Projects_list_loc_1)):
+				Projects_list_loc_2 = Projects_list_loc_1[j].find_all("span", {"aria-hidden": "true"})
+
+				Projects.append([])
+				for k in range(len(Projects_list_loc_2)):
+					Projects[j].append(Projects_list_loc_2[k].get_text().strip())
+
+			for j in range(len(Projects)):
+				print(Projects[j])
 
 
 contact_url = profile_url + "overlay/contact-info/"
