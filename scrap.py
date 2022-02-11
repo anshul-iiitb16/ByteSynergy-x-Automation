@@ -69,7 +69,7 @@ driver.find_element_by_xpath("//button[@type='submit']").click()
 # In case of an error, try changing the
 # XPath used here.
 profile_url = "https://www.linkedin.com/in/mayank1609/"	#"https://www.linkedin.com/in/anshul-jindal-420109230/"  # "https://www.linkedin.com/in/mayank1609/" 	#"https://www.linkedin.com/in/shreeyav/"
-  
+
 driver.get(profile_url)
 
 # will be used in the while loop
