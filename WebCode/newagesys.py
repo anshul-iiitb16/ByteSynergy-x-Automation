@@ -18,31 +18,32 @@ def web():
     #if not using firefox Comment this out this is for firefox
     web_driver = webdriver.Firefox(executable_path=firefox_path)
 
-    url = 'https://lenoxexsearch.com/submit-resume/'
-    web_driver.get('https://lenoxexsearch.com/submit-resume/')
+    url = 'https://www.newagesys.com/submit_resume.php'
+    web_driver.get(url)
 
     time.sleep(2)
 
     your_name = "Ayesha"
-    name = web_driver.find_element_by_xpath('//*[@id="candidate_name"]')
+    name = web_driver.find_element_by_xpath('//*[@id="txtname"]')
     name.send_keys(your_name)
 
     your_email = "Ayesha@gmail.com"
-    email = web_driver.find_element_by_xpath('//*[@id="candidate_email"]')
+    email = web_driver.find_element_by_xpath('//*[@id="txtmail"]')
     email.send_keys(your_email)
 
-    your_city = "USA"
-    city = web_driver.find_element_by_xpath('//*[@id="candidate_location"]')
-    city.send_keys(your_city)
-
     your_num = "+1 91888234243"
-    num = web_driver.find_element_by_xpath('// *[ @ id = "candidate_phone"]')
+    num = web_driver.find_element_by_xpath('//*[@id="txtphone"]')
     num.send_keys(your_num)
 
-    #resume_file = web_driver.find_element_by_xpath('//*[@id="resume_file"]')
-    #resume_file.send_keys(loc)
+    job_title = "Web Developer"
+    web_driver.find_element_by_xpath('//*[@id="txttitle"]').send_keys(job_title)
 
+    resume_file = web_driver.find_element_by_xpath('//*[@id="resume"]')
+    resume_file.send_keys(loc)
+
+    message = "I have 5 years of experience"
+    web_driver.find_element_by_xpath('//*[@id="message"]').send_keys(message)
 
     #It will submit so dont uncomment
-    # submit = web_driver.find_element_by_xpath('//*[@id="submit-resume-form"]/p/input[5]')
+    # submit = web_driver.find_element_by_xpath('/html/body/div/div[2]/div[4]/div/form/table/tbody/tr[7]/td[2]/a/img')
     # submit.click()
