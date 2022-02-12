@@ -1,7 +1,7 @@
 from selenium import webdriver
 import time
 import os
-import requests as requests
+import Scraper.scrap as sc
 
 str1 = os.path.dirname(__file__)
 str2 = "resume.pdf"
@@ -14,7 +14,7 @@ chrome_path = str1 + "/../drivers/chromedriver"
 def web():
     #Uncomment this line to use Chrome
     # web_driver = webdriver.Chrome(executable_path=chrome_path )
-    
+    mylist = sc.begin()
     #if not using firefox Comment this out this is for firefox
     web_driver = webdriver.Firefox(executable_path=firefox_path)
 
@@ -23,19 +23,19 @@ def web():
 
     time.sleep(2)
 
-    your_name = "Ayesha"
+    your_name = mylist[0]
     name = web_driver.find_element_by_xpath('//*[@id="txtname"]')
     name.send_keys(your_name)
 
-    your_email = "Ayesha@gmail.com"
+    your_email = mylist[5]
     email = web_driver.find_element_by_xpath('//*[@id="txtmail"]')
     email.send_keys(your_email)
 
-    your_num = "+1 91888234243"
+    your_num = mylist[3]
     num = web_driver.find_element_by_xpath('//*[@id="txtphone"]')
     num.send_keys(your_num)
 
-    job_title = "Web Developer"
+    job_title = mylist[1]
     web_driver.find_element_by_xpath('//*[@id="txttitle"]').send_keys(job_title)
 
     resume_file = web_driver.find_element_by_xpath('//*[@id="resume"]')
