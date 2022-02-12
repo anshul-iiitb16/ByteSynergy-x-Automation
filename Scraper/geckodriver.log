@@ -1,0 +1,31 @@
+1644690770395	geckodriver	INFO	Listening on 127.0.0.1:38919
+1644690770820	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "60849" "-no-remote" "-profile" "/tmp/rust_mozprofile7y4XuE"
+[GFX1-]: glxtest: libEGL missing
+1644690772115	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile7y4XuE/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:60849/devtools/browser/5f8e56ac-df81-49d2-8f3a-be2d0319ab09
+1644690775159	Marionette	INFO	Listening on port 39589
+1644690775268	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static-exp1.licdn.com/sc/h/6jblk5oqhlo45xbkmcr7s4zix, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static-exp1.licdn.com/sc/h/6jblk5oqhlo45xbkmcr7s4zix, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+JavaScript warning: https://static-exp1.licdn.com/sc/h/8u03d1519g11gaqwwqgc2abr8, line 6453: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/5fubl7dxrfbtvusuoy0vpoq2l, line 6: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/bvgywvrk412qwrt66wgbgoum1, line 39: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/azn9f1tzpdg7l5ye7qgtxmdld, line 6: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/escbym9js6rr6quan0ab3nau3, line 6: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/8kb9l4hzkpmkrp41o3r5mpbil, line 6: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/c3sb68o7hb1szgx0l4vol2o8w, line 6: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/drbx8ay6dox1yfwcywx5l4iv9, line 39: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/88aewm7prt8bt2wofbaq3qrny, line 6: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/azcl8nr2yqse5rbmpc7i7h012, line 6: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/bsaarfiw6bvnfvbh2k53i7xid, line 6: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/8u03d1519g11gaqwwqgc2abr8, line 6453: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/bsaarfiw6bvnfvbh2k53i7xid, line 6: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/bvgywvrk412qwrt66wgbgoum1, line 39: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/bvgywvrk412qwrt66wgbgoum1, line 39: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/escbym9js6rr6quan0ab3nau3, line 6: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/8kb9l4hzkpmkrp41o3r5mpbil, line 6: unreachable code after return statement
+1644692308026	Marionette	INFO	Stopped listening on port 39589

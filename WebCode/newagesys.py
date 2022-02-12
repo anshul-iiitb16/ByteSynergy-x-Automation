@@ -1,7 +1,6 @@
 from selenium import webdriver
 import time
 import os
-import Scraper.scrap as sc
 
 str1 = os.path.dirname(__file__)
 str2 = "resume.pdf"
