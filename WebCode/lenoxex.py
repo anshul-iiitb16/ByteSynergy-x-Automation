@@ -1,7 +1,8 @@
 from selenium import webdriver
 import time
 import os
-import requests as requests
+import Scraper.scrap as sc
+
 
 str1 = os.path.dirname(__file__)
 str2 = "resume.pdf"
@@ -16,6 +17,7 @@ def web():
     # web_driver = webdriver.Chrome(executable_path=chrome_path )
     
     #if not using firefox Comment this out this is for firefox
+    mylist = sc.begin()
     web_driver = webdriver.Firefox(executable_path=firefox_path)
 
     url = 'https://lenoxexsearch.com/submit-resume/'
@@ -23,26 +25,26 @@ def web():
 
     time.sleep(2)
 
-    your_name = "Ayesha"
+    your_name = mylist[0]
     name = web_driver.find_element_by_xpath('//*[@id="candidate_name"]')
     name.send_keys(your_name)
 
-    your_email = "Ayesha@gmail.com"
+    your_email = mylist[5]
     email = web_driver.find_element_by_xpath('//*[@id="candidate_email"]')
     email.send_keys(your_email)
 
-    your_city = "USA"
+    your_city = mylist[2]
     city = web_driver.find_element_by_xpath('//*[@id="candidate_location"]')
     city.send_keys(your_city)
 
-    your_num = "+1 91888234243"
+    your_num = mylist[3]
     num = web_driver.find_element_by_xpath('// *[ @ id = "candidate_phone"]')
     num.send_keys(your_num)
 
-    #resume_file = web_driver.find_element_by_xpath('//*[@id="resume_file"]')
-    #resume_file.send_keys(loc)
-
+    resume_file = web_driver.find_element_by_xpath('//*[@id="resume_file"]')
+    resume_file.send_keys(loc)
 
     #It will submit so dont uncomment
     # submit = web_driver.find_element_by_xpath('//*[@id="submit-resume-form"]/p/input[5]')
     # submit.click()
+
