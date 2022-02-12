@@ -10,7 +10,7 @@ import webbrowser
 
 import sys
 sys.path.append('../WebCode')
-import lenoxex as website1
+#import WebCode.lenoxex as website1
 
 # from tkinter import *
 # Explicit imports to satisfy Flake8
@@ -20,280 +20,285 @@ from tkinter import Tk, Canvas, Entry, Text, Button, PhotoImage
 OUTPUT_PATH = Path(__file__).parent
 ASSETS_PATH = OUTPUT_PATH / Path("./assets")
 
+username = ""
+password = ""
+filepath = ""
+
+image_1 = -1
 
 def relative_to_assets(path: str) -> Path:
-    return ASSETS_PATH / Path(path)
+	return ASSETS_PATH / Path(path)
 
-window = Tk(className="resume uploader")
+class GUI:
 
-window.geometry("862x519")
-window.configure(bg = "#3A7FF6")
+	def __init__(self):
+		self.image_2 = -1
+		self.image_1 = -1
+
+	def gui(self):
+		global window, canvas
+		window = Tk(className="resume uploader")
+
+		window.geometry("862x519")
+		window.configure(bg = "#3A7FF6")
+
+		canvas = Canvas(
+			window,
+			bg = "#3A7FF6",
+			height = 519,
+			width = 862,
+			bd = 0,
+			highlightthickness = 0,
+			relief = "ridge"
+		)
+
+		canvas.place(x = 0, y = 0)
+
+		canvas.create_rectangle(
+			431.0,
+			3.552713678800501e-15,
+			862.0,
+			519.0,
+			fill="#FFFFFF",
+			outline="")
+
+		self.left_panel()
+		self.right_panel()
+
+		window.resizable(False, False)
+		window.mainloop()
 
 
-filepath = "resume.pdf"
-def get_filepath():
-    filepath = askopenfilename(initialdir="~", title="Upload your resume")
-    temp = filepath.split("/")
-    canvas.itemconfigure(resume, text=temp[-1])
+	def get_filepath(self):
+		filepath = askopenfilename(initialdir="~", title="Upload your resume")
+		temp = filepath.split("/")
+		canvas.itemconfigure(resume, text=temp[-1])
 
-canvas = Canvas(
-    window,
-    bg = "#3A7FF6",
-    height = 519,
-    width = 862,
-    bd = 0,
-    highlightthickness = 0,
-    relief = "ridge"
-)
 
-canvas.place(x = 0, y = 0)
-image_image_1 = PhotoImage(
-    file=relative_to_assets("image_1.png"))
-image_1 = canvas.create_image(
-    215.00000000000003,
-    259.0,
-    image=image_image_1
-)
 
-canvas.create_rectangle(
-    431.0,
-    3.552713678800501e-15,
-    862.0,
-    519.0,
-    fill="#FFFFFF",
-    outline="")
+	def right_panel(self):
+		button_image_1 = PhotoImage(
+			file=relative_to_assets("button_1.png"))
+		button_1 = Button(
+			image=button_image_1,
+			borderwidth=0,
+			highlightthickness=0,
+			command=lambda: website1(),
+			relief="flat"
+		)
 
-button_image_1 = PhotoImage(
-    file=relative_to_assets("button_1.png"))
-button_1 = Button(
-    image=button_image_1,
-    borderwidth=0,
-    highlightthickness=0,
-    command=lambda: website1.web(),
-    relief="flat"
-)
-button_1.place(
-    x=556.0,
-    y=378.0,
-    width=180.0,
-    height=55.0
-)
+		button_1.place(
+			x=555.0,
+			y=396.0,
+			width=180.0,
+			height=55.0
+		)
 
-button_image_2 = PhotoImage(
-    file=relative_to_assets("button_2.png"))
+		image_image_2 = PhotoImage(
+			file=relative_to_assets("image_2.png"))
+		self.image_2 = canvas.create_image(
+			646.0,
+			35.0,
+			image=image_image_2
+		)
 
-# button_2 = Button(
-#     image=button_image_2,
-#     bg="black",
-#     borderwidth=0,
-#     highlightthickness=0,
-#     command=lambda: print("button_2 clicked"),
-#     relief="flat"
-# )
-# button_2.place(
-#     x=151.99999999999997,
-#     y=466.0,
-#     width=128.0,
-#     height=41.0
-# )
+		image_image_3 = PhotoImage(
+			file=relative_to_assets("image_3.png"))
+		image_3 = canvas.create_image(
+			591.0,
+			112.0,
+			image=image_image_3
+		)
 
-button_2= canvas.create_image(151.99999999999997, 466.0, anchor="nw",image=button_image_2)
-canvas.tag_bind(button_2, "<Button-1>", lambda x: webbrowser.open_new_tab('https://github.com/anshul-iiitb16/ByteSynergy-x-Automation'))
+		entry_image_1 = PhotoImage(
+			file=relative_to_assets("entry_1.png"))
+		entry_bg_1 = canvas.create_image(
+			645.0,
+			241.0,
+			image=entry_image_1
+		)
+		entry_1 = Entry(
+			bd=0,
+			bg="#ECECF5",
+			highlightthickness=0
+		)
 
-image_image_2 = PhotoImage(
-    file=relative_to_assets("image_2.png"))
-image_2 = canvas.create_image(
-    646.0,
-    35.0,
-    image=image_image_2
-)
+		entry_1.place(
+			x=478.0,
+			y=213.0,
+			width=300.0,
+			height=54.0
+		)
 
-entry_image_1 = PhotoImage(
-    file=relative_to_assets("entry_1.png"))
-entry_bg_1 = canvas.create_image(
-    645.0,
-    241.0,
-    image=entry_image_1
-)
-entry_1 = Entry(
-    bd=0,
-    bg="#ECECF5",
-    highlightthickness=0
-)
-entry_1.place(
-    x=478.0,
-    y=213.0,
-    width=300.0,
-    height=54.0
-)
+		entry_image_2 = PhotoImage(
+			file=relative_to_assets("entry_2.png"))
+		entry_bg_2 = canvas.create_image(
+			645.0,
+			166.0,
+			image=entry_image_2
+		)
+		entry_2 = Entry(
+			bd=0,
+			bg="#ECECF5",
+			highlightthickness=0,
+		)
+		entry_2.place(
+			x=478.0,
+			y=138.0,
+			width=300.0,
+			height=54.0
+		)
 
-entry_image_2 = PhotoImage(
-    file=relative_to_assets("entry_2.png"))
-entry_bg_2 = canvas.create_image(
-    645.0,
-    166.0,
-    image=entry_image_2
-)
-entry_2 = Entry(
-    bd=0,
-    bg="#ECECF5",
-    highlightthickness=0
-)
+		canvas.create_text(
+			443.0,
+			475.0,
+			anchor="nw",
+			text="Your password is safe, secure, and protected.",
+			fill="#807C7C",
+			font=("Roboto Bold", 15 * -1)
+		)
 
-entry_2.place(
-    x=478.0,
-    y=138.0,
-    width=300.0,
-    height=54.0
-)
+		canvas.create_text(
+			443.0,
+			493.0,
+			anchor="nw",
+			text="We do not store your confidential data.",
+			fill="#807C7C",
+			font=("Roboto Bold", 15 * -1)
+		)
 
-canvas.create_rectangle(
-    184.99999999999997,
-    90.0,
-    244.99999999999997,
-    95.0,
-    fill="#FCFCFC",
-    outline="")
+		image_image_6 = PhotoImage(
+			file=relative_to_assets("image_6.png"))
+		image_6 = canvas.create_image(
+			795.0,
+			166.0,
+			image=image_image_6
+		)
 
-canvas.create_text(
-    471.0,
-    98.0,
-    anchor="nw",
-    text="Enter your Credentials",
-    fill="#2867B2",
-    font=("Roboto Bold", 24 * -1)
-)
 
-canvas.create_text(
-    24.99999999999997,
-    55.0,
-    anchor="nw",
-    text="Welcome to Resume Uploader",
-    fill="#FCFCFC",
-    font=("Roboto Bold", 30 * -1)
-)
+		# Uplaod file
+		button_image_3 = PhotoImage(
+			file=relative_to_assets("button_3.png"))
+		button_3 = Button(
+			image=button_image_3,
+			borderwidth=0,
+			highlightthickness=0,
+			command=lambda: get_filepath(),
+			relief="flat"
+		)
 
-canvas.create_text(
-    36.99999999999997,
-    109.0,
-    anchor="nw",
-    text="Land your dream job with the help of our",
-    fill="#FFFFFF",
-    font=("Roboto Bold", 19 * -1)
-)
+		button_3.place(
+			x=468.0,
+			y=288.0,
+			width=219.0,
+			height=56.0
+		)
 
-canvas.create_text(
-    192.99999999999997,
-    131.0,
-    anchor="nw",
-    text="tool",
-    fill="#FFFFFF",
-    font=("Roboto Bold", 19 * -1)
-)
+		resume = canvas.create_text(
+			711.0,
+			303.0,
+			anchor="nw",
+			text=filepath,
+			fill="#000000",
+			font=("Noto Sans", 19 * -1)
+		)
 
-canvas.create_text(
-    443.0,
-    475.0,
-    anchor="nw",
-    text="Your password is safe, secure, and protected.",
-    fill="#807C7C",
-    font=("Roboto Bold", 15 * -1)
-)
+		image_image_7 = PhotoImage(
+			file=relative_to_assets("image_7.png"))
+		image_7 = canvas.create_image(
+			795.0,
+			238.0,
+			image=image_image_7
+		)
 
-canvas.create_text(
-    443.0,
-    493.0,
-    anchor="nw",
-    text="We do not store your confidential data.",
-    fill="#807C7C",
-    font=("Roboto Bold", 15 * -1)
-)
 
-image_image_3 = PhotoImage(
-    file=relative_to_assets("image_3.png"))
-image_3 = canvas.create_image(
-    795.0,
-    166.0,
-    image=image_image_3
-)
+		canvas.create_text(
+			511.0,
+			360.0,
+			anchor="nw",
+			text="Don’t have a Resume?",
+			fill="#000000",
+			font=("Noto Sans", 15 * -1)
+		)
 
-image_image_4 = PhotoImage(
-    file=relative_to_assets("image_4.png"))
-image_4 = canvas.create_image(
-    795.0,
-    238.0,
-    image=image_image_4
-)
+		canvas.create_text(
+			687.0,
+			360.0,
+			anchor="nw",
+			text="Create one",
+			fill="#000000",
+			font=("Noto Sans", 15 * -1)
+		)
 
-# Upload File 
-button_image_3 = PhotoImage(
-    file=relative_to_assets("button_3.png"))
-button_3 = Button(
-    image=button_image_3,
-    borderwidth=0,
-    highlightthickness=0,
-    command=lambda : get_filepath(),
-    relief="flat"
-)
-button_3.place(
-    x=468.0,
-    y=288.0,
-    width=219.0,
-    height=56.0
-)
+		username = entry_1.get()
+		password = entry_2.get()
+		print(password)
 
-resume = canvas.create_text(
-    711.0,
-    303.0,
-    anchor="nw",
-    text=filepath,
-    fill="#000000",
-    font=("Baskervville", 19 * -1)
-)
+		window.mainloop()
 
-canvas.create_text(
-    36.99999999999997,
-    194.0,
-    anchor="nw",
-    text="Resume Uploader uses LinkedIn API to",
-    fill="#FCFCFC",
-    font=("Baskervville", 19 * -1)
-)
 
-canvas.create_text(
-    36.99999999999997,
-    219.0,
-    anchor="nw",
-    text="fetch your info and automates",
-    fill="#FCFCFC",
-    font=("Baskervville", 19 * -1)
-)
 
-canvas.create_text(
-    36.99999999999997,
-    244.0,
-    anchor="nw",
-    text="applying to various jobs with the help",
-    fill="#FCFCFC",
-    font=("Baskervville", 19 * -1)
-)
 
-canvas.create_text(
-    36.99999999999997,
-    269.0,
-    anchor="nw",
-    text="of Selenium.",
-    fill="#FCFCFC",
-    font=("Baskervville", 19 * -1)
-)
 
-canvas.create_text(
-    184.99999999999997,
-    451.0,
-    anchor="nw",
-    text="Find us on ",
-    fill="#FFFFFF",
-    font=("Arsenal Regular", 15 * -1)
-)
-window.resizable(False, False)
-window.mainloop()
+	def left_panel(self):
+
+		image_image_1 = PhotoImage(
+			file=relative_to_assets("image_1.png"))
+		self.image_1 = canvas.create_image(
+			215.0,
+			259.0,
+			image=image_image_1
+		)
+
+
+		button_image_2 = PhotoImage(
+			file=relative_to_assets("button_2.png"))
+
+		button_2= canvas.create_image(151.99999999999997, 466.0, anchor="nw",image=button_image_2)
+		canvas.tag_bind(button_2, "<Button-1>", lambda x: webbrowser.open_new_tab('https://github.com/anshul-iiitb16/ByteSynergy-x-Automation'))
+
+
+		image_image_4 = PhotoImage(
+			file=relative_to_assets("image_4.png"))
+		image_4 = canvas.create_image(
+			214.0,
+			64.0,
+			image=image_image_4
+		)
+
+		canvas.create_rectangle(
+			185.0,
+			85.0,
+			245.0,
+			90.0,
+			fill="#FCFCFC",
+			outline="")
+
+
+		image_image_5 = PhotoImage(
+			file=relative_to_assets("image_5.png"))
+		image_5 = canvas.create_image(
+			215.0,
+			125.0,
+			image=image_image_5
+		)
+
+		image_image_8 = PhotoImage(
+			file=relative_to_assets("image_8.png"))
+		image_8 = canvas.create_image(
+			215.0,
+			254.0,
+			image=image_image_8
+		)
+
+		canvas.create_text(
+			185.0,
+			451.0,
+			anchor="nw",
+			text="Find us on ",
+			fill="#FFFFFF",
+			font=("Arsenal Regular", 15 * -1)
+		)
+
+g = GUI()
+g.gui()

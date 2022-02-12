@@ -3,8 +3,7 @@ from bs4 import BeautifulSoup
 import time
 import os
 from selenium.webdriver.common.by import By
-
-import scrap_assist
+import Scraper.scrap_assist as scrap_assist
 
 def scroll(driver):
 	initialScroll = 0
@@ -32,7 +31,7 @@ def scroll(driver):
 		if round(end - start) > 20:
 			break
 
-def login_into_linkedIn(driver):
+def login_into_linkedIn(driver, username, password):
 
 	# Opening linkedIn's login page
 	driver.get("https://linkedin.com/uas/login")
@@ -40,13 +39,14 @@ def login_into_linkedIn(driver):
 	# waiting for the page to load
 	time.sleep(5)
 
-	username = driver.find_element(By.ID, "username")
+	Username = driver.find_element(By.ID, "username")
 	# Enter Your Username
-	username.send_keys("chadhamayank1609@gmail.com")
+
+	Username.send_keys(username)
 
 	pword = driver.find_element(By.ID, "password")
 	# Enter Your Password
-	pword.send_keys("roomnum219")
+	pword.send_keys(password)
 
 	# Clicking on the log in button
 	driver.find_element(By.XPATH, "//button[@type='submit']").click()
@@ -155,13 +155,13 @@ def extract_email(soup):
 
 	return Email
 
-def begin():
+def begin(username, password):
 
 	str1 = os.getcwd()
 	str2 = "chromedriver"
 	loc = str1 + "/" + str2
 
-	firefox_path = os.path.dirname(__file__) + "/drivers/geckodriver"
+	firefox_path = os.path.dirname(__file__) + "/../drivers/geckodriver"
 	chrome_path = os.path.dirname(__file__) + "/drivers/chromedriver"
 
 
@@ -170,14 +170,13 @@ def begin():
 	driver = webdriver.Firefox(executable_path=firefox_path)
 
 	# Now we login into linkedIn
-	login_into_linkedIn(driver)
+	login_into_linkedIn(driver, username, password)
 
 	driver.find_element(By.XPATH, '/html/body/div[6]/div[3]/div/div/div[2]/div/div/div/div[1]/div[1]/a/div[2]').click()
 
-	time.sleep(10)
+	time.sleep(8)
 
-	print(driver.current_url)
-	profile_url = driver.current_url
+	profile_url = driver.current_url #"https://www.linkedin.com/in/ca-sahil-jindal-448149164/"
 
 
 	soup_for_profile = Enter_into_link(profile_url, driver)
@@ -234,10 +233,6 @@ def begin():
 	FINAL_LIST.append(EDUCATION)		# 7
 	FINAL_LIST.append(PROJECTS)			# 8
 	FINAL_LIST.append(SKILLS)			# 9
+	FINAL_LIST.append(profile_url)		# 10
 
-	print(FINAL_LIST)
 	return FINAL_LIST
-
-if __name__ == "__main__":
-
-	list = begin()

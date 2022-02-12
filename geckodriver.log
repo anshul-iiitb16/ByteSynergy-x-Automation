@@ -614,3 +614,611 @@ JavaScript warning: https://static-exp1.licdn.com/sc/h/bvgywvrk412qwrt66wgbgoum1
 JavaScript warning: https://static-exp1.licdn.com/sc/h/bvgywvrk412qwrt66wgbgoum1, line 39: unreachable code after return statement
 JavaScript warning: https://static-exp1.licdn.com/sc/h/escbym9js6rr6quan0ab3nau3, line 6: unreachable code after return statement
 JavaScript warning: https://static-exp1.licdn.com/sc/h/8kb9l4hzkpmkrp41o3r5mpbil, line 6: unreachable code after return statement
+1644664374519	Marionette	INFO	Stopped listening on port 36209
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
+1644664377959	Marionette	INFO	Stopped listening on port 41681
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
+1644672227162	geckodriver	INFO	Listening on 127.0.0.1:48717
+1644672318049	geckodriver	INFO	Listening on 127.0.0.1:45255
+1644672318492	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "54333" "-no-remote" "-profile" "/tmp/rust_mozprofilehgJnXX"
+[GFX1-]: glxtest: libEGL missing
+1644672319594	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilehgJnXX/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:54333/devtools/browser/71386eb0-da3c-471c-807d-7153f965df54
+1644672321357	Marionette	INFO	Listening on port 46653
+1644672321426	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1644672329469	geckodriver	INFO	Listening on 127.0.0.1:57035
+1644672329864	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "42385" "-no-remote" "-profile" "/tmp/rust_mozprofilexToz7i"
+[GFX1-]: glxtest: libEGL missing
+1644672330483	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilexToz7i/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:42385/devtools/browser/9ba99a09-9226-4f45-b53b-073bf514e4cf
+1644672333453	Marionette	INFO	Listening on port 37535
+1644672333509	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1644672388712	geckodriver	INFO	Listening on 127.0.0.1:58917
+1644672389156	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "38165" "-no-remote" "-profile" "/tmp/rust_mozprofileebXVCO"
+[GFX1-]: glxtest: libEGL missing
+1644672389719	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileebXVCO/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:38165/devtools/browser/0b312885-1680-4fc3-843c-73b46f3b9acf
+1644672391817	Marionette	INFO	Listening on port 42381
+1644672391888	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1644672397416	geckodriver	INFO	Listening on 127.0.0.1:57139
+1644672397860	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "38587" "-no-remote" "-profile" "/tmp/rust_mozprofileSoNmsE"
+[GFX1-]: glxtest: libEGL missing
+1644672398433	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileSoNmsE/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:38587/devtools/browser/126ac026-acba-4127-b7d2-cc31c48c61af
+1644672400288	Marionette	INFO	Listening on port 35179
+1644672400399	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1644672408986	Marionette	INFO	Stopped listening on port 35179
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1644672411260	Marionette	INFO	Stopped listening on port 42381
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1644672473254	geckodriver	INFO	Listening on 127.0.0.1:55833
+1644672473708	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "40445" "-no-remote" "-profile" "/tmp/rust_mozprofileqmE3VZ"
+[GFX1-]: glxtest: libEGL missing
+1644672474263	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileqmE3VZ/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:40445/devtools/browser/9a3e4088-d717-41ac-8318-9dc9a7d95527
+1644672475921	Marionette	INFO	Listening on port 34413
+1644672476037	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+Marionette threw an error: TypeError: this.curBrowser.contentBrowser is null
+GeckoDriver.prototype.navigateTo@chrome://remote/content/marionette/driver.js:849:3
+
+1644672480611	Marionette	INFO	Stopped listening on port 34413
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1644692129807	geckodriver	INFO	Listening on 127.0.0.1:34513
+1644692130239	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "46317" "-no-remote" "-profile" "/tmp/rust_mozprofile3RrgVY"
+[GFX1-]: glxtest: libEGL missing
+1644692131287	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile3RrgVY/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:46317/devtools/browser/b68d11d1-f41c-4b20-8418-37833f2e1f88
+1644692135097	Marionette	INFO	Listening on port 40369
+1644692135195	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static-exp1.licdn.com/sc/h/6jblk5oqhlo45xbkmcr7s4zix, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static-exp1.licdn.com/sc/h/6jblk5oqhlo45xbkmcr7s4zix, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+JavaScript warning: https://static-exp1.licdn.com/sc/h/8u03d1519g11gaqwwqgc2abr8, line 6453: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/5fubl7dxrfbtvusuoy0vpoq2l, line 6: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/bvgywvrk412qwrt66wgbgoum1, line 39: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/azn9f1tzpdg7l5ye7qgtxmdld, line 6: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/escbym9js6rr6quan0ab3nau3, line 6: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/8kb9l4hzkpmkrp41o3r5mpbil, line 6: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/c3sb68o7hb1szgx0l4vol2o8w, line 6: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/drbx8ay6dox1yfwcywx5l4iv9, line 39: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/88aewm7prt8bt2wofbaq3qrny, line 6: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/azcl8nr2yqse5rbmpc7i7h012, line 6: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/bsaarfiw6bvnfvbh2k53i7xid, line 6: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/8u03d1519g11gaqwwqgc2abr8, line 6453: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/bsaarfiw6bvnfvbh2k53i7xid, line 6: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/bvgywvrk412qwrt66wgbgoum1, line 39: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/bvgywvrk412qwrt66wgbgoum1, line 39: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/escbym9js6rr6quan0ab3nau3, line 6: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/8kb9l4hzkpmkrp41o3r5mpbil, line 6: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/8u03d1519g11gaqwwqgc2abr8, line 6453: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/bsaarfiw6bvnfvbh2k53i7xid, line 6: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/bvgywvrk412qwrt66wgbgoum1, line 39: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/bvgywvrk412qwrt66wgbgoum1, line 39: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/escbym9js6rr6quan0ab3nau3, line 6: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/8kb9l4hzkpmkrp41o3r5mpbil, line 6: unreachable code after return statement
+1644692288947	geckodriver	INFO	Listening on 127.0.0.1:51859
+1644692289365	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "33769" "-no-remote" "-profile" "/tmp/rust_mozprofileJU2Oo0"
+[GFX1-]: glxtest: libEGL missing
+1644692292100	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileJU2Oo0/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:33769/devtools/browser/8b8c2b3f-1739-4028-bc0f-c18d067ed8b9
+1644692296138	Marionette	INFO	Listening on port 38461
+1644692296206	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static-exp1.licdn.com/sc/h/6jblk5oqhlo45xbkmcr7s4zix, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static-exp1.licdn.com/sc/h/6jblk5oqhlo45xbkmcr7s4zix, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1644692304109	Marionette	INFO	Stopped listening on port 40369
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript warning: https://static-exp1.licdn.com/sc/h/8u03d1519g11gaqwwqgc2abr8, line 6453: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/5fubl7dxrfbtvusuoy0vpoq2l, line 6: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/bvgywvrk412qwrt66wgbgoum1, line 39: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/azn9f1tzpdg7l5ye7qgtxmdld, line 6: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/escbym9js6rr6quan0ab3nau3, line 6: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/8kb9l4hzkpmkrp41o3r5mpbil, line 6: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/c3sb68o7hb1szgx0l4vol2o8w, line 6: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/drbx8ay6dox1yfwcywx5l4iv9, line 39: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/88aewm7prt8bt2wofbaq3qrny, line 6: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/azcl8nr2yqse5rbmpc7i7h012, line 6: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/bsaarfiw6bvnfvbh2k53i7xid, line 6: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/8u03d1519g11gaqwwqgc2abr8, line 6453: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/bsaarfiw6bvnfvbh2k53i7xid, line 6: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/bvgywvrk412qwrt66wgbgoum1, line 39: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/bvgywvrk412qwrt66wgbgoum1, line 39: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/escbym9js6rr6quan0ab3nau3, line 6: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/8kb9l4hzkpmkrp41o3r5mpbil, line 6: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/8u03d1519g11gaqwwqgc2abr8, line 6453: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/bsaarfiw6bvnfvbh2k53i7xid, line 6: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/bvgywvrk412qwrt66wgbgoum1, line 39: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/bvgywvrk412qwrt66wgbgoum1, line 39: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/escbym9js6rr6quan0ab3nau3, line 6: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/8kb9l4hzkpmkrp41o3r5mpbil, line 6: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/8u03d1519g11gaqwwqgc2abr8, line 6453: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/bsaarfiw6bvnfvbh2k53i7xid, line 6: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/bvgywvrk412qwrt66wgbgoum1, line 39: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/bvgywvrk412qwrt66wgbgoum1, line 39: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/escbym9js6rr6quan0ab3nau3, line 6: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/8kb9l4hzkpmkrp41o3r5mpbil, line 6: unreachable code after return statement
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1644692609982	geckodriver	INFO	Listening on 127.0.0.1:35671
+1644692610432	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "41189" "-no-remote" "-profile" "/tmp/rust_mozprofile0SzKDF"
+[GFX1-]: glxtest: libEGL missing
+1644692611005	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile0SzKDF/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:41189/devtools/browser/aea3d9cb-617a-48a0-82a3-7064d899799c
+1644692612640	Marionette	INFO	Listening on port 35685
+1644692612762	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1644692623335	geckodriver	INFO	Listening on 127.0.0.1:59169
+1644692623774	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "54867" "-no-remote" "-profile" "/tmp/rust_mozprofileajMwcl"
+[GFX1-]: glxtest: libEGL missing
+1644692624339	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileajMwcl/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:54867/devtools/browser/9176726f-8e61-4a2b-80d2-7b4430450202
+1644692626154	Marionette	INFO	Listening on port 45857
+1644692626205	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1644692638636	geckodriver	INFO	Listening on 127.0.0.1:49819
+1644692639067	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "37223" "-no-remote" "-profile" "/tmp/rust_mozprofilej6zZNu"
+[GFX1-]: glxtest: libEGL missing
+1644692639631	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilej6zZNu/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:37223/devtools/browser/0e2eb8ec-6ce8-45c1-b330-36b453b3d5c2
+1644692641397	Marionette	INFO	Listening on port 35779
+1644692641499	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1644692660895	Marionette	INFO	Stopped listening on port 45857
+1644692660902	Marionette	INFO	Stopped listening on port 35779
+1644692660904	Marionette	INFO	Stopped listening on port 35685
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1644692757250	geckodriver	INFO	Listening on 127.0.0.1:47899
+1644692757687	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "46867" "-no-remote" "-profile" "/tmp/rust_mozprofilePW84ko"
+[GFX1-]: glxtest: libEGL missing
+1644692758266	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilePW84ko/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:46867/devtools/browser/de7e8458-1182-4619-893f-e64d3d4694af
+1644692760012	Marionette	INFO	Listening on port 38929
+1644692760118	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1644692793231	geckodriver	INFO	Listening on 127.0.0.1:51217
+1644692793670	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "60643" "-no-remote" "-profile" "/tmp/rust_mozprofilegm7eiL"
+[GFX1-]: glxtest: libEGL missing
+1644692794194	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilegm7eiL/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:60643/devtools/browser/89bac882-5456-40ac-b593-a65ac88075f4
+1644692795841	Marionette	INFO	Listening on port 39169
+1644692795900	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1644693021470	geckodriver	INFO	Listening on 127.0.0.1:59275
+1644693021923	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "57179" "-no-remote" "-profile" "/tmp/rust_mozprofile1gSazo"
+[GFX1-]: glxtest: libEGL missing
+1644693022470	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile1gSazo/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:57179/devtools/browser/fa94b6fd-c2e9-4607-96d7-ff5402aa3865
+1644693024187	Marionette	INFO	Listening on port 41389
+1644693024254	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1644693056262	geckodriver	INFO	Listening on 127.0.0.1:55443
+1644693056695	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "50205" "-no-remote" "-profile" "/tmp/rust_mozprofileaG9ZmJ"
+[GFX1-]: glxtest: libEGL missing
+1644693057227	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileaG9ZmJ/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:50205/devtools/browser/15c765d5-0838-4863-8f0e-9524b0bc2385
+1644693058998	Marionette	INFO	Listening on port 35285
+1644693059034	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1644693320607	geckodriver	INFO	Listening on 127.0.0.1:51889
+1644693321057	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "39947" "-no-remote" "-profile" "/tmp/rust_mozprofileXUTZWS"
+[GFX1-]: glxtest: libEGL missing
+1644693321594	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileXUTZWS/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:39947/devtools/browser/092d52f3-8d4e-4b8c-9e9c-59ee258728c5
+1644693323146	Marionette	INFO	Listening on port 44271
+1644693323186	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static-exp1.licdn.com/sc/h/6jblk5oqhlo45xbkmcr7s4zix, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static-exp1.licdn.com/sc/h/6jblk5oqhlo45xbkmcr7s4zix, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1644693330010	Marionette	INFO	Stopped listening on port 44271
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1644693421659	geckodriver	INFO	Listening on 127.0.0.1:43203
+1644693422116	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "55885" "-no-remote" "-profile" "/tmp/rust_mozprofile9Xl81Z"
+[GFX1-]: glxtest: libEGL missing
+1644693422680	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile9Xl81Z/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:55885/devtools/browser/7c080b4e-fbc8-49e0-ab22-4551a11a24ab
+1644693424391	Marionette	INFO	Listening on port 33095
+1644693424446	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static-exp1.licdn.com/sc/h/6jblk5oqhlo45xbkmcr7s4zix, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static-exp1.licdn.com/sc/h/6jblk5oqhlo45xbkmcr7s4zix, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1644693447749	geckodriver	INFO	Listening on 127.0.0.1:38033
+1644693448194	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "48765" "-no-remote" "-profile" "/tmp/rust_mozprofileWSQMwg"
+[GFX1-]: glxtest: libEGL missing
+1644693448757	Marionette	INFO	Marionette enabled
+1644693820301	geckodriver	INFO	Listening on 127.0.0.1:46895
+1644693820734	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "59719" "-no-remote" "-profile" "/tmp/rust_mozprofilekO8bZU"
+[GFX1-]: glxtest: libEGL missing
+1644693822048	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilekO8bZU/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:59719/devtools/browser/f9395a57-b715-4574-b8ed-770e583c1bb5
+1644693823926	Marionette	INFO	Listening on port 44659
+1644693823974	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static-exp1.licdn.com/sc/h/6jblk5oqhlo45xbkmcr7s4zix, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static-exp1.licdn.com/sc/h/6jblk5oqhlo45xbkmcr7s4zix, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+JavaScript warning: https://static-exp1.licdn.com/sc/h/8u03d1519g11gaqwwqgc2abr8, line 6453: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/5fubl7dxrfbtvusuoy0vpoq2l, line 6: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/bvgywvrk412qwrt66wgbgoum1, line 39: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/azn9f1tzpdg7l5ye7qgtxmdld, line 6: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/escbym9js6rr6quan0ab3nau3, line 6: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/8kb9l4hzkpmkrp41o3r5mpbil, line 6: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/c3sb68o7hb1szgx0l4vol2o8w, line 6: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/drbx8ay6dox1yfwcywx5l4iv9, line 39: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/88aewm7prt8bt2wofbaq3qrny, line 6: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/azcl8nr2yqse5rbmpc7i7h012, line 6: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/bsaarfiw6bvnfvbh2k53i7xid, line 6: unreachable code after return statement
+1644693838452	Marionette	INFO	Stopped listening on port 44659
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1644693909218	geckodriver	INFO	Listening on 127.0.0.1:36605
+1644693909667	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "54439" "-no-remote" "-profile" "/tmp/rust_mozprofile8BvX1K"
+[GFX1-]: glxtest: libEGL missing
+1644693910213	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile8BvX1K/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:54439/devtools/browser/6f10673c-ede0-4a69-8277-95b31fb7a8ce
+1644693911990	Marionette	INFO	Listening on port 39263
+1644693912118	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static-exp1.licdn.com/sc/h/6jblk5oqhlo45xbkmcr7s4zix, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static-exp1.licdn.com/sc/h/6jblk5oqhlo45xbkmcr7s4zix, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1644693917047	Marionette	INFO	Stopped listening on port 39263
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1644693918389	geckodriver::marionette	ERROR	Failed to close browser connection: Socket not connected (os error 107)
+1644694985623	geckodriver	INFO	Listening on 127.0.0.1:46467
+1644694986024	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "38995" "-no-remote" "-profile" "/tmp/rust_mozprofileqTkyQ2"
+[GFX1-]: glxtest: libEGL missing
+1644694987553	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileqTkyQ2/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:38995/devtools/browser/2a1b754b-2ebc-4020-89d5-e190a155e906
+1644694990948	Marionette	INFO	Listening on port 43445
+1644694991010	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1644695008605	Marionette	INFO	Stopped listening on port 43445
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1644695542961	geckodriver	INFO	Listening on 127.0.0.1:59941
+1644695543336	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "39021" "-no-remote" "-profile" "/tmp/rust_mozprofileqxk15Z"
+[GFX1-]: glxtest: libEGL missing
+1644695544311	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileqxk15Z/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:39021/devtools/browser/94ccf283-c906-4a16-94c3-70e4c95c1671
+1644695547143	Marionette	INFO	Listening on port 40841
+1644695547181	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static-exp1.licdn.com/sc/h/6jblk5oqhlo45xbkmcr7s4zix, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static-exp1.licdn.com/sc/h/6jblk5oqhlo45xbkmcr7s4zix, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1644695558975	Marionette	INFO	Stopped listening on port 40841
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1644695645569	geckodriver	INFO	Listening on 127.0.0.1:47247
+1644695645960	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "58159" "-no-remote" "-profile" "/tmp/rust_mozprofile0tObBm"
+[GFX1-]: glxtest: libEGL missing
+1644695646833	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile0tObBm/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:58159/devtools/browser/f8e9b088-8845-4069-ba45-45d8dc920694
+1644695649469	Marionette	INFO	Listening on port 46619
+1644695649509	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static-exp1.licdn.com/sc/h/6jblk5oqhlo45xbkmcr7s4zix, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static-exp1.licdn.com/sc/h/6jblk5oqhlo45xbkmcr7s4zix, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1644695667477	Marionette	INFO	Stopped listening on port 46619
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1644695815666	geckodriver	INFO	Listening on 127.0.0.1:49341
+1644695816106	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "48003" "-no-remote" "-profile" "/tmp/rust_mozprofile0Pi058"
+[GFX1-]: glxtest: libEGL missing
+1644695816949	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile0Pi058/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:48003/devtools/browser/d3d5b53b-10b9-4d1f-acf1-1a8cf170646a
+1644695819720	Marionette	INFO	Listening on port 39501
+1644695819857	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static-exp1.licdn.com/sc/h/6jblk5oqhlo45xbkmcr7s4zix, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static-exp1.licdn.com/sc/h/6jblk5oqhlo45xbkmcr7s4zix, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+JavaScript warning: https://static-exp1.licdn.com/sc/h/6jblk5oqhlo45xbkmcr7s4zix, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static-exp1.licdn.com/sc/h/6jblk5oqhlo45xbkmcr7s4zix, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1644695831284	Marionette	INFO	Stopped listening on port 39501
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+1644695943475	geckodriver	INFO	Listening on 127.0.0.1:40151
+1644695943903	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "36541" "-no-remote" "-profile" "/tmp/rust_mozprofilefrChgg"
+[GFX1-]: glxtest: libEGL missing
+1644695944888	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilefrChgg/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:36541/devtools/browser/6f2a8d80-d89f-4b2e-b3c4-b41c20ad57ef
+1644695947830	Marionette	INFO	Listening on port 38451
+1644695947958	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static-exp1.licdn.com/sc/h/6jblk5oqhlo45xbkmcr7s4zix, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static-exp1.licdn.com/sc/h/6jblk5oqhlo45xbkmcr7s4zix, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+JavaScript warning: https://static-exp1.licdn.com/sc/h/6jblk5oqhlo45xbkmcr7s4zix, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static-exp1.licdn.com/sc/h/6jblk5oqhlo45xbkmcr7s4zix, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1644695973139	Marionette	INFO	Stopped listening on port 38451
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1644696042098	geckodriver	INFO	Listening on 127.0.0.1:59565
+1644696042478	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "49715" "-no-remote" "-profile" "/tmp/rust_mozprofileczdFAS"
+[GFX1-]: glxtest: libEGL missing
+1644696043330	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileczdFAS/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:49715/devtools/browser/3d0e8f94-095b-4c37-a67b-e63c0c41dfb1
+1644696046038	Marionette	INFO	Listening on port 37353
+1644696046140	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static-exp1.licdn.com/sc/h/6jblk5oqhlo45xbkmcr7s4zix, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static-exp1.licdn.com/sc/h/6jblk5oqhlo45xbkmcr7s4zix, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1644696066474	Marionette	INFO	Stopped listening on port 37353
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+1644696080756	geckodriver	INFO	Listening on 127.0.0.1:59611
+1644696081143	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "60107" "-no-remote" "-profile" "/tmp/rust_mozprofileiUQtFk"
+[GFX1-]: glxtest: libEGL missing
+1644696081974	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileiUQtFk/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:60107/devtools/browser/a0de7456-9a1c-4ca3-8b23-ab7321efae87
+1644696084629	Marionette	INFO	Listening on port 36543
+1644696084694	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static-exp1.licdn.com/sc/h/6jblk5oqhlo45xbkmcr7s4zix, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static-exp1.licdn.com/sc/h/6jblk5oqhlo45xbkmcr7s4zix, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1644696096638	Marionette	INFO	Stopped listening on port 36543
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1644696115272	geckodriver	INFO	Listening on 127.0.0.1:45905
+1644696115680	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "47627" "-no-remote" "-profile" "/tmp/rust_mozprofilerKiOR7"
+[GFX1-]: glxtest: libEGL missing
+1644696116507	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilerKiOR7/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:47627/devtools/browser/7165d389-326e-4877-b836-2f0825219080
+1644696119496	Marionette	INFO	Listening on port 41953
+1644696119586	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static-exp1.licdn.com/sc/h/6jblk5oqhlo45xbkmcr7s4zix, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static-exp1.licdn.com/sc/h/6jblk5oqhlo45xbkmcr7s4zix, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1644696144582	Marionette	INFO	Stopped listening on port 41953
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1644696257125	geckodriver	INFO	Listening on 127.0.0.1:37107
+1644696257488	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "41221" "-no-remote" "-profile" "/tmp/rust_mozprofilesQo6JK"
+[GFX1-]: glxtest: libEGL missing
+1644696258386	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilesQo6JK/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:41221/devtools/browser/d2736a03-689f-421f-a043-38fae76b10fb
+1644696261145	Marionette	INFO	Listening on port 36309
+1644696261241	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static-exp1.licdn.com/sc/h/6jblk5oqhlo45xbkmcr7s4zix, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static-exp1.licdn.com/sc/h/6jblk5oqhlo45xbkmcr7s4zix, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+JavaScript warning: https://static-exp1.licdn.com/sc/h/6jblk5oqhlo45xbkmcr7s4zix, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static-exp1.licdn.com/sc/h/6jblk5oqhlo45xbkmcr7s4zix, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1644696280256	Marionette	INFO	Stopped listening on port 36309
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1644696294263	geckodriver	INFO	Listening on 127.0.0.1:51359
+1644696294766	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "60625" "-no-remote" "-profile" "/tmp/rust_mozprofileBBzhsD"
+[GFX1-]: glxtest: libEGL missing
+1644696295633	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileBBzhsD/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:60625/devtools/browser/59df0cf8-8541-450a-b0f1-c4ca3ef9b4da
+1644696298180	Marionette	INFO	Listening on port 40619
+1644696298309	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static-exp1.licdn.com/sc/h/6jblk5oqhlo45xbkmcr7s4zix, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static-exp1.licdn.com/sc/h/6jblk5oqhlo45xbkmcr7s4zix, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+JavaScript warning: https://static-exp1.licdn.com/sc/h/6jblk5oqhlo45xbkmcr7s4zix, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static-exp1.licdn.com/sc/h/6jblk5oqhlo45xbkmcr7s4zix, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1644696311032	Marionette	INFO	Stopped listening on port 40619
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1644696360683	geckodriver	INFO	Listening on 127.0.0.1:41289
+1644696361189	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "47187" "-no-remote" "-profile" "/tmp/rust_mozprofiletOdnSN"
+[GFX1-]: glxtest: libEGL missing
+1644696362081	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofiletOdnSN/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:47187/devtools/browser/9eaa8c54-dbfd-49b0-a656-da107af7a8f6
+1644696364853	Marionette	INFO	Listening on port 41525
+1644696364935	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static-exp1.licdn.com/sc/h/6jblk5oqhlo45xbkmcr7s4zix, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static-exp1.licdn.com/sc/h/6jblk5oqhlo45xbkmcr7s4zix, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+JavaScript warning: https://static-exp1.licdn.com/sc/h/8u03d1519g11gaqwwqgc2abr8, line 6453: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/5fubl7dxrfbtvusuoy0vpoq2l, line 6: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/bvgywvrk412qwrt66wgbgoum1, line 39: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/azn9f1tzpdg7l5ye7qgtxmdld, line 6: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/escbym9js6rr6quan0ab3nau3, line 6: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/8kb9l4hzkpmkrp41o3r5mpbil, line 6: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/c3sb68o7hb1szgx0l4vol2o8w, line 6: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/drbx8ay6dox1yfwcywx5l4iv9, line 39: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/88aewm7prt8bt2wofbaq3qrny, line 6: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/azcl8nr2yqse5rbmpc7i7h012, line 6: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/bsaarfiw6bvnfvbh2k53i7xid, line 6: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/8u03d1519g11gaqwwqgc2abr8, line 6453: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/bsaarfiw6bvnfvbh2k53i7xid, line 6: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/bvgywvrk412qwrt66wgbgoum1, line 39: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/bvgywvrk412qwrt66wgbgoum1, line 39: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/escbym9js6rr6quan0ab3nau3, line 6: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/8kb9l4hzkpmkrp41o3r5mpbil, line 6: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/8u03d1519g11gaqwwqgc2abr8, line 6453: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/bsaarfiw6bvnfvbh2k53i7xid, line 6: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/bvgywvrk412qwrt66wgbgoum1, line 39: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/bvgywvrk412qwrt66wgbgoum1, line 39: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/escbym9js6rr6quan0ab3nau3, line 6: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/8kb9l4hzkpmkrp41o3r5mpbil, line 6: unreachable code after return statement
+1644696471592	Marionette	INFO	Stopped listening on port 41525
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1644696994002	geckodriver	INFO	Listening on 127.0.0.1:50655
+1644696994395	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "59311" "-no-remote" "-profile" "/tmp/rust_mozprofile193fOW"
+[GFX1-]: glxtest: libEGL missing
+1644696995646	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile193fOW/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:59311/devtools/browser/f580edcd-a54e-4e5d-869c-ce8aa523711a
+1644697000819	Marionette	INFO	Listening on port 39615
+1644697000980	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1644697001956	Marionette	INFO	Stopped listening on port 39615
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+1644697003961	geckodriver::marionette	ERROR	Failed to close browser connection: Socket not connected (os error 107)
+1644697032781	geckodriver	INFO	Listening on 127.0.0.1:52385
+1644697033155	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "41429" "-no-remote" "-profile" "/tmp/rust_mozprofilenJmhIJ"
+[GFX1-]: glxtest: libEGL missing
+1644697034044	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilenJmhIJ/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:41429/devtools/browser/061fc2a0-eb28-4f58-9918-6c15fc08d44e
+1644697037150	Marionette	INFO	Listening on port 36985
+1644697037231	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1644697046411	Marionette	INFO	Stopped listening on port 36985
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1644697600359	geckodriver	INFO	Listening on 127.0.0.1:37311
+1644697600769	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "45337" "-no-remote" "-profile" "/tmp/rust_mozprofilevgSAK8"
+[GFX1-]: glxtest: libEGL missing
+1644697601535	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilevgSAK8/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:45337/devtools/browser/75b044df-d267-48dd-8a7e-455e11428f16
+1644697604124	Marionette	INFO	Listening on port 33397
+1644697604343	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static-exp1.licdn.com/sc/h/6jblk5oqhlo45xbkmcr7s4zix, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static-exp1.licdn.com/sc/h/6jblk5oqhlo45xbkmcr7s4zix, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+JavaScript warning: https://static-exp1.licdn.com/sc/h/8u03d1519g11gaqwwqgc2abr8, line 6453: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/5fubl7dxrfbtvusuoy0vpoq2l, line 6: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/bvgywvrk412qwrt66wgbgoum1, line 39: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/azn9f1tzpdg7l5ye7qgtxmdld, line 6: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/escbym9js6rr6quan0ab3nau3, line 6: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/8kb9l4hzkpmkrp41o3r5mpbil, line 6: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/c3sb68o7hb1szgx0l4vol2o8w, line 6: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/drbx8ay6dox1yfwcywx5l4iv9, line 39: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/88aewm7prt8bt2wofbaq3qrny, line 6: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/azcl8nr2yqse5rbmpc7i7h012, line 6: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/bsaarfiw6bvnfvbh2k53i7xid, line 6: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/8u03d1519g11gaqwwqgc2abr8, line 6453: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/bsaarfiw6bvnfvbh2k53i7xid, line 6: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/bvgywvrk412qwrt66wgbgoum1, line 39: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/bvgywvrk412qwrt66wgbgoum1, line 39: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/escbym9js6rr6quan0ab3nau3, line 6: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/8kb9l4hzkpmkrp41o3r5mpbil, line 6: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/8u03d1519g11gaqwwqgc2abr8, line 6453: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/bsaarfiw6bvnfvbh2k53i7xid, line 6: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/bvgywvrk412qwrt66wgbgoum1, line 39: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/bvgywvrk412qwrt66wgbgoum1, line 39: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/escbym9js6rr6quan0ab3nau3, line 6: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/8kb9l4hzkpmkrp41o3r5mpbil, line 6: unreachable code after return statement
+Exiting due to channel error.
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+1644697790980	geckodriver	INFO	Listening on 127.0.0.1:46901
+1644697791350	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "35749" "-no-remote" "-profile" "/tmp/rust_mozprofilemoSaql"
+[GFX1-]: glxtest: libEGL missing
+1644697792345	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilemoSaql/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:35749/devtools/browser/5c5b0e55-afd4-4c44-803e-86417824cad5
+1644697795233	Marionette	INFO	Listening on port 38197
+1644697795315	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static-exp1.licdn.com/sc/h/6jblk5oqhlo45xbkmcr7s4zix, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static-exp1.licdn.com/sc/h/6jblk5oqhlo45xbkmcr7s4zix, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+JavaScript warning: https://static-exp1.licdn.com/sc/h/8u03d1519g11gaqwwqgc2abr8, line 6453: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/5fubl7dxrfbtvusuoy0vpoq2l, line 6: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/bvgywvrk412qwrt66wgbgoum1, line 39: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/azn9f1tzpdg7l5ye7qgtxmdld, line 6: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/escbym9js6rr6quan0ab3nau3, line 6: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/8kb9l4hzkpmkrp41o3r5mpbil, line 6: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/c3sb68o7hb1szgx0l4vol2o8w, line 6: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/drbx8ay6dox1yfwcywx5l4iv9, line 39: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/88aewm7prt8bt2wofbaq3qrny, line 6: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/azcl8nr2yqse5rbmpc7i7h012, line 6: unreachable code after return statement
+1644697876898	Marionette	INFO	Stopped listening on port 38197
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
