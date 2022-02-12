@@ -161,15 +161,24 @@ def begin():
 	str2 = "chromedriver"
 	loc = str1 + "/" + str2
 
+	firefox_path = os.path.dirname(__file__) + "/drivers/geckodriver"
+	chrome_path = os.path.dirname(__file__) + "/drivers/chromedriver"
+
+
 	# Creating a webdriver instance
-	driver = webdriver.Chrome(loc)
+	#driver = webdriver.Chrome(loc)
+	driver = webdriver.Firefox(executable_path=firefox_path)
 
 	# Now we login into linkedIn
 	login_into_linkedIn(driver)
 
-	profile_url = "https://www.linkedin.com/in/mayank1609/" 	#"https://www.linkedin.com/in/bidisha-chaudhuri-0a13617/"  # "https://www.linkedin.com/in/anshul-jindal-420109230/"  # "https://www.linkedin.com/in/mayank1609/" 	#"https://www.linkedin.com/in/shreeyav/"
-	#Starting with Contact details
-	#profile_link = get_URL_link(driver, profile_url)
+	driver.find_element(By.XPATH, '/html/body/div[6]/div[3]/div/div/div[2]/div/div/div/div[1]/div[1]/a/div[2]').click()
+
+	time.sleep(10)
+
+	print(driver.current_url)
+	profile_url = driver.current_url
+
 
 	soup_for_profile = Enter_into_link(profile_url, driver)
 
@@ -226,6 +235,7 @@ def begin():
 	FINAL_LIST.append(PROJECTS)			# 8
 	FINAL_LIST.append(SKILLS)			# 9
 
+	print(FINAL_LIST)
 	return FINAL_LIST
 
 if __name__ == "__main__":
