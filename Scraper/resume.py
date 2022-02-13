@@ -242,11 +242,7 @@ def Build_Start(username, password):
 	Email = LIST_OF_ENTITIES[5]
 	write_Contact_Details(Location, Contact, Email, Profile_link)
 
-
-	plt.savefig('resume.png', dpi=300, bbox_inches='tight')
+	#plt.savefig('resume.png', dpi=300, bbox_inches='tight')
+	plt.savefig('resume.pdf')
 	#plt.show()
 	return LIST_OF_ENTITIES
-
-if __name__ == "__main__":
-
-	Build_Start()

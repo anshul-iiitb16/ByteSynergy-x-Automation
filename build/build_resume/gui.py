@@ -7,51 +7,41 @@ from tkinter.filedialog import askopenfilename
 from turtle import update
 import webbrowser
 import os
-import Scraper.scrap as sc
+import Scraper.resume as sc
+import build.gui as parent_gui
 
-import sys
-sys.path.append('../WebCode')
 
 # from tkinter import *
 # Explicit imports to satisfy Flake8
 from tkinter import Tk, Canvas, Entry, Text, Button, PhotoImage
 
+
 OUTPUT_PATH = Path(__file__).parent
 ASSETS_PATH = OUTPUT_PATH / Path("./assets")
-
-str1 = os.path.dirname(__file__)
-
-def build_resume():
-	window.destroy()
-	exec(open("/mnt/d/code/ByteSynergy-x-Automation/build_resume/gui.py").read())
 
 def relative_to_assets(path: str) -> Path:
     return ASSETS_PATH / Path(path)
 
-info = []
-
 def get_list():
-	
 	password = entry_1.get()
 	username = entry_2.get()
-	info = sc.begin(username, password)
+	parent_gui.info = sc.Build_Start(username, password)
+	parent_gui.filepath = os.path.dirname(__file__) + "/../../resume.pdf"
+	print("Resume built")
+	print(parent_gui.info)
 	window.destroy()
 	window.quit()
-	return info
 
-filepath = ""
 
-def get_filepath():
-    filepath = askopenfilename(initialdir="~", title="Upload your resume")
-    temp = filepath.split("/")
-    canvas.itemconfigure(resume, text=temp[-1])
-	
 def Start():
-	global window, canvas, resume, entry_1, entry_2
-	window = Tk(className="resume uploader")
+	print("Starting Resume Builder GUI....")
+	global window, canvas, entry_1, entry_2
+
+	window = Tk()
 
 	window.geometry("862x519")
 	window.configure(bg = "#3A7FF6")
+
 
 	canvas = Canvas(
 	    window,
@@ -74,7 +64,7 @@ def Start():
 
 	canvas.create_rectangle(
 	    431.0,
-	    3.552713678800501e-15,
+	    0.0,
 	    862.0,
 	    519.0,
 	    fill="#FFFFFF",
@@ -91,7 +81,7 @@ def Start():
 	)
 	button_1.place(
 	    x=555.0,
-	    y=396.0,
+	    y=344.0,
 	    width=180.0,
 	    height=55.0
 	)
@@ -114,19 +104,18 @@ def Start():
 	    file=relative_to_assets("entry_1.png"))
 	entry_bg_1 = canvas.create_image(
 	    645.0,
-	    241.0,
+	    278.0,
 	    image=entry_image_1
 	)
 	entry_1 = Entry(
 	    bd=0,
 	    bg="#ECECF5",
 	    highlightthickness=0,
-		show="*"
+		show='*'
 	)
-
 	entry_1.place(
 	    x=478.0,
-	    y=213.0,
+	    y=250.0,
 	    width=300.0,
 	    height=54.0
 	)
@@ -135,7 +124,7 @@ def Start():
 	    file=relative_to_assets("entry_2.png"))
 	entry_bg_2 = canvas.create_image(
 	    645.0,
-	    166.0,
+	    198.0,
 	    image=entry_image_2
 	)
 	entry_2 = Entry(
@@ -145,7 +134,7 @@ def Start():
 	)
 	entry_2.place(
 	    x=478.0,
-	    y=138.0,
+	    y=170.0,
 	    width=300.0,
 	    height=54.0
 	)
@@ -161,7 +150,7 @@ def Start():
 	image_image_3 = PhotoImage(
 	    file=relative_to_assets("image_3.png"))
 	image_3 = canvas.create_image(
-	    591.0,
+	    610.0,
 	    112.0,
 	    image=image_image_3
 	)
@@ -204,7 +193,7 @@ def Start():
 	    file=relative_to_assets("image_6.png"))
 	image_6 = canvas.create_image(
 	    795.0,
-	    166.0,
+	    198.0,
 	    image=image_image_6
 	)
 
@@ -212,35 +201,8 @@ def Start():
 	    file=relative_to_assets("image_7.png"))
 	image_7 = canvas.create_image(
 	    795.0,
-	    238.0,
+	    278.0,
 	    image=image_image_7
-	)
-
-	# Uplaod file
-	button_image_3 = PhotoImage(
-	    file=relative_to_assets("button_3.png"))
-	button_3 = Button(
-	    image=button_image_3,
-	    borderwidth=0,
-	    highlightthickness=0,
-	    command=lambda: get_filepath(),
-	    relief="flat"
-	)
-
-	button_3.place(
-	    x=468.0,
-	    y=288.0,
-	    width=219.0,
-	    height=56.0
-	)
-
-	resume = canvas.create_text(
-	    711.0,
-	    303.0,
-	    anchor="nw",
-	    text=filepath,
-	    fill="#000000",
-	    font=("Noto Sans", 19 * -1)
 	)
 
 	canvas.create_text(
@@ -259,34 +221,5 @@ def Start():
 	    254.0,
 	    image=image_image_8
 	)
-
-	canvas.create_text(
-	    511.0,
-	    360.0,
-	    anchor="nw",
-	    text="Don’t have a Resume?",
-	    fill="#000000",
-	    font=("Noto Sans", 15 * -1)
-	)
-
-	button_image_4 = PhotoImage(
-	    file=relative_to_assets("button_4.png"))
-	button_4 = Button(
-	    image=button_image_4,
-	    borderwidth=0,
-	    highlightthickness=0,
-	    command=lambda: build_resume(),
-	    relief="flat"
-	)
-
-
-
-	button_4.place(
-	    x=687.0,
-	    y=357.0,
-	    width=83.0,
-	    height=20.0
-	)
-
 	window.resizable(False, False)
 	window.mainloop()

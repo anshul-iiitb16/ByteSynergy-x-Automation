@@ -3,17 +3,15 @@ import time
 import os
 
 str1 = os.path.dirname(__file__)
-str2 = "resume.pdf"
-loc = str1 + "/" + str2
 
 #if not using firefox Comment this out this is for firefox
 firefox_path = str1 + "/../drivers/geckodriver"
 chrome_path = str1 + "/../drivers/chromedriver"
 
-def web():
+def web(mylist, loc):
     #Uncomment this line to use Chrome
     # web_driver = webdriver.Chrome(executable_path=chrome_path )
-    mylist = sc.begin()
+ 
     #if not using firefox Comment this out this is for firefox
     web_driver = webdriver.Firefox(executable_path=firefox_path)
 
