@@ -142,7 +142,7 @@ def extract_Skills(Common, driver, profile_url):
 				Skills_list_loc_1 = Skills_list_loc.find_all("span", {"aria-hidden": "true"})
 
 				for j in range(len(Skills_list_loc_1)):
-					if(Skills_list_loc_1[j].get_text().strip() != "'Passed LinkedIn Skill Assessment'"):
+					if(Skills_list_loc_1[j].get_text().strip() != "Passed LinkedIn Skill Assessment"):
 						Skills.append(Skills_list_loc_1[j].get_text().strip())
 
 				print("List of Skills:", Skills)
@@ -203,14 +203,3 @@ def get_Major(soup,driver,profile_url):
 	lst.append(SKILLS)
 
 	return lst
-
-
-
-
-
-
-
-
-
-
-
