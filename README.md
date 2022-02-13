@@ -10,8 +10,11 @@ Jobbot is a cutting edge app for a busy student/professional who does not need t
 
 Thus if you want to save time and apply for jobs smarter, then Jobbot is THE application for you!
 
-## Authors
+## Track
+Task Automation
 
+## Authors
+Team Name - Room_Num_219
 - [Anshul Jindal](https://github.com/anshul-iiitb16)
 - [Mayank Chadha](https://github.com/mayankchadha16)
 - [Shreeya Venneti](https://github.com/ShreeyaVenneti)
@@ -19,23 +22,19 @@ Thus if you want to save time and apply for jobs smarter, then Jobbot is THE app
 
 ## DETAILS:
 
-1. Web Automation and Web Scraping are the key ideas for this project. Data from LinkedIn is scraped and used for resume building. Further, () job search sites are automated for filling of candidate's deatils along with uploading the resume.
+1. Web Automation and Web Scraping are the key ideas for this project. Data from LinkedIn is scraped and used for resume building. Further, some job search sites are automated for filling of candidate's deatils along with uploading the resume.
 
 	List of job search sites automated:
-	- 1
-	- 2
-	- 3
-	- 4
+	- [Lenoxex](https://lenoxexsearch.com/submit-resume/)
+	- [Newagesys](https://www.newagesys.com/submit_resume.php)
 
-2. Only python programming language has been used in this project.
+2.  Python programming language along with some of it's major libraries have been used in this project. We also used Figma to design the GUI.
 
 3. Libraries used:
-	- Matplotlib - For building the resume from the LinkedIn data, and saving it as a png image
-	- Tkinter - To build Jobbot's GUI
+	- Matplotlib - For building the resume from the LinkedIn data, and saving it as PDF
+	- Tkinter and Canvas - To build Jobbot's GUI
 	- Selenium - To automate login to LinkedIn, button clicks and filling of fields in Job application websites
 	- BeautifulSoup - For web scraping the user's Linkedin profile information.
-	- Figma - 
-	
  
 4. Following fields are scraped from LinkedIn:
 	- Name
@@ -50,13 +49,15 @@ Thus if you want to save time and apply for jobs smarter, then Jobbot is THE app
 	- Projects
 	- Skills				
 
-
 ## SCOPE:
 
 - Can be used by students/job seekers to build a professional resume and apply for jobs.
-- The application works on desktop/laptop devices across various operating systems.
-
-- We also plan to extend this application to be made available to Android and iOS devices in the future.
+<!-- - The application just needs Python to run -->
+<!-- 
+- We also plan to extend this application to be made available to Android and iOS devices in the future. -->
+- Some recuitment websites require Sign Up before filling recruitment forms. We can extend our application by automating such websites.
+- Our Application can serve as a handy tool to create professional Resumes from a user's LinkedIn Profile.
+- We can import our Application to various Python Frameworks like Django and Flask.
 
 ## Installation
 
@@ -64,7 +65,7 @@ Install Selenium library in Ubuntu
 
 ```bash
   $ sudo apt-get install python-pip
-  $ sudo pip install selenium
+  $ sudo pip3 install selenium
 ```
 
 Install lxml library in Ubuntu
@@ -82,25 +83,30 @@ Install matplotlib library in Ubuntu
 ```bash
   $ sudo apt-get install python3-matplotlib.
 ```
+
+Install Tkinter library in Ubuntu
+```bash
+  $ sudo apt-get install python-tk
+```
+
 ## Instructions to run the code:
 
 - Make sure ChromeDriver and all py files are in the same directory.
-- Run (----).py and the Jobbot GUI will pop up.
+- By default, we are using Firefox WebDriver for Selenium. Make sure to install the latest version of Firefox before running the script.
+- Run Runner.py and the Jobbot GUI will pop up.
 - If you want Jobbot to make you a resume:
 		- Click on option "Create one"
 		- Fill in your LinkedIn credentials - both Username and Password
-		- Click on Enter button
-- If you prefer to upload a resume:
-		- Click on "browse" button and upload your resume.
-		- Click Enter button
+		- Click on Create button
+		- Jobbot will create a new resume in it's working directory and automate the task of filling the forms
+- If you prefer to use your own resume:
+		- Fill in your LinkedIn credentials - both Username and Password
+		- Click on "browse" button and upload your resume
+		- Click Submit button
+		- Jobbot will automate the task of filling the forms
 
 ## Demo
 
 ## Screenshots
 
 ![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
-
-
-## Feedback
-
-If you have any feedback, please reach out to us at anshuliiitb16@gmail.com.
