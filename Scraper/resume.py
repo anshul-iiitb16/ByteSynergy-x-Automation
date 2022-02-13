@@ -196,7 +196,7 @@ def write_Contact_Details(Location, Contact, Email, Profile_link):
 	plt.annotate(Email, (.663, .77), weight='regular', fontsize=10, color='#ffffff')
 
 
-def Build_Start():
+def Build_Start(username,password):
 
 	plt.rcParams['font.family'] = 'sans-serif'
 	plt.rcParams['font.sans-serif'] = 'STIXGeneral'
@@ -210,7 +210,7 @@ def Build_Start():
 	# remove axes
 	plt.axis('off')
 
-	LIST_OF_ENTITIES = scrap.begin()
+	LIST_OF_ENTITIES = scrap.begin(username,password)
 
 
 	Y_to_be_carried = 0.9400
