@@ -161,12 +161,17 @@ def write_Education(Y_to_be_carried, Education):
 def write_Skills(Skills):
 	x1 = .663
 	y1 = 0.66
-	print(len(Skills))
-	for i in range(len(Skills)):
-		if (Skills[i] != 'Passed LinkedIn Skill Assessment'):
-			plt.annotate(Skills[i], (x1, y1), weight='regular', fontsize=11, color='#ffffff')
-			y1 = y1 - 0.025
-	plt.annotate("SKILLS", (.663, .70), weight='bold', fontsize=15, color='#ffffff')
+
+	if(len(Skills) != 0):
+		for i in range(len(Skills)):
+			if (Skills[i] != 'Passed LinkedIn Skill Assessment'):
+				Skill_split = Skills[i].split(" ")
+
+				if(Skill_split[0] != "Endorsed" and Skill_split[0] != '·'):
+					plt.annotate(Skills[i], (x1, y1), weight='regular', fontsize=11, color='#ffffff')
+					y1 = y1 - 0.025
+
+		plt.annotate("SKILLS", (.663, .70), weight='bold', fontsize=15, color='#ffffff')
 
 
 def write_Contact_Details(Location, Contact, Email, Profile_link):
@@ -191,7 +196,7 @@ def write_Contact_Details(Location, Contact, Email, Profile_link):
 	plt.annotate(Email, (.663, .77), weight='regular', fontsize=10, color='#ffffff')
 
 
-def Build_Start(username, password):
+def Build_Start():
 
 	plt.rcParams['font.family'] = 'sans-serif'
 	plt.rcParams['font.sans-serif'] = 'STIXGeneral'
@@ -205,7 +210,7 @@ def Build_Start(username, password):
 	# remove axes
 	plt.axis('off')
 
-	LIST_OF_ENTITIES = scrap.begin(username, password)
+	LIST_OF_ENTITIES = scrap.begin()
 
 
 	Y_to_be_carried = 0.9400
@@ -242,7 +247,8 @@ def Build_Start(username, password):
 	Email = LIST_OF_ENTITIES[5]
 	write_Contact_Details(Location, Contact, Email, Profile_link)
 
-	#plt.savefig('resume.png', dpi=300, bbox_inches='tight')
-	plt.savefig('resume.pdf')
+
+	# plt.savefig('resume.png', dpi=300, bbox_inches='tight')
 	#plt.show()
+	plt.savefig('resume.pdf')
 	return LIST_OF_ENTITIES
