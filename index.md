@@ -1,26 +1,42 @@
-# Welcome to Jobbot
+# Jobbot
+
+## DESCRIPTION:
+
+Jobbot is an application which makes applying for jobs easier. You only have to enter your Linkedin credentials, and Jobbot does the rest!
+
+Jobbot will essentially scan through your Linkedin profile, curate a high quality, professional resume just for you which gets auto downloaded into your system. Equipped with your Linkedin profile summary and your resume created, Jobbot applies to various well known job application websites by auto filling your details and uploading your resume, thereby saving you a lot of time. You are also given a choice to upload your own resume too. 
+
+Jobbot is a cutting edge app for a busy student/professional who does not need to  spend time seperately to create one's resume or apply for jobs due to its core functionality of creating a resume out of enriched Linkedin profile in real time. The feature of posting on to job portals further enhances its utility thereby letting job aspirants focus on subtler aspects of interview.
+
+Thus if you want to save time and apply for jobs smarter, then Jobbot is THE application for you!
+
+## Track
+Task Automation
+
+## Authors
+Team Name - Room_Num_219
+- [Anshul Jindal](https://github.com/anshul-iiitb16)
+- [Mayank Chadha](https://github.com/mayankchadha16)
+- [Shreeya Venneti](https://github.com/ShreeyaVenneti)
+- [Shridhar Sharma](https://github.com/Shridhar2602)
 
 ## DETAILS:
 
-1. Web Automation and Web Scraping are the key ideas for this project. Data from LinkedIn is scraped and used for resume building. Further, () job search sites are automated for filling of candidate's deatils along with uploading the resume.
+1. Web Automation and Web Scraping are the key ideas for this project. Data from LinkedIn is scraped and used for resume building. Further, some job search sites are automated for filling of candidate's deatils along with uploading the resume.
 
-	list of job search sites automated:
-			- 1
-			- 2
-			- 3
-			- 4
+	List of job search sites automated:
+	- [Lenoxex](https://lenoxexsearch.com/submit-resume/)
+	- [Newagesys](https://www.newagesys.com/submit_resume.php)
 
-2. Only python programming language has been used in this project.
+2.  Python programming language along with some of it's major libraries have been used in this project. We also used Figma to design the GUI.
 
 3. Libraries used:
-	- Matplotlib - For building the resume and saving it as a png image.
-	- Tkinter - To build GUI
-	- Selenium - For automating web browsing
-	- BeautifulSoup - For Web Scraping 
-	- Figma -
-	
+	- Matplotlib - For building the resume from the LinkedIn data, and saving it as PDF
+	- Tkinter and Canvas - To build Jobbot's GUI
+	- Selenium - To automate login to LinkedIn, button clicks and filling of fields in Job application websites
+	- BeautifulSoup - For web scraping the user's Linkedin profile information.
  
-4. Following Entities are scraped from LinedIn:
+4. Following fields are scraped from LinkedIn:
 	- Name
 	- Profile_URL
 	- Roles
@@ -33,77 +49,64 @@
 	- Projects
 	- Skills				
 
-
 ## SCOPE:
 
 - Can be used by students/job seekers to build a professional resume and apply for jobs.
-- The application works on desktop/laptop devices across various operating systems.
+<!-- - The application just needs Python to run -->
+<!-- 
+- We also plan to extend this application to be made available to Android and iOS devices in the future. -->
+- Some recuitment websites require Sign Up before filling recruitment forms. We can extend our application by automating such websites.
+- Our Application can serve as a handy tool to create professional Resumes from a user's LinkedIn Profile.
+- We can import our Application to various Python Frameworks like Django and Flask.
 
-- We also plan to extend this application to be made available to Android and iOS devices in the future.
+## Installation
 
+Install Selenium library in Ubuntu
 
+```bash
+  $ sudo apt-get install python-pip
+  $ sudo pip3 install selenium
+```
 
-## INSTRUCTIONS TO RUN THE CODE:
+Install lxml library in Ubuntu
+
+```bash
+  $ sudo apt-get install python3-lxml
+```
+
+Install bs4 library in Ubuntu
+```bash
+  $ sudo apt-get install python3-bs4
+```
+
+Install matplotlib library in Ubuntu
+```bash
+  $ sudo apt-get install python3-matplotlib.
+```
+
+Install Tkinter library in Ubuntu
+```bash
+  $ sudo apt-get install python-tk
+```
+
+## Instructions to run the code:
 
 - Make sure ChromeDriver and all py files are in the same directory.
-- Run (----).py and the Jobbot GUI will pop up.
+- By default, we are using Firefox WebDriver for Selenium. Make sure to install the latest version of Firefox before running the script.
+- Run Runner.py and the Jobbot GUI will pop up.
 - If you want Jobbot to make you a resume:
 		- Click on option "Create one"
 		- Fill in your LinkedIn credentials - both Username and Password
-		- Click on Enter button
-- If you prefer to upload a resume:
-		- Click on "browse" button and upload your resume.
-		- Click Enter button
+		- Click on Create button
+		- Jobbot will create a new resume in it's working directory and automate the task of filling the forms
+- If you prefer to use your own resume:
+		- Fill in your LinkedIn credentials - both Username and Password
+		- Click on "browse" button and upload your resume
+		- Click Submit button
+		- Jobbot will automate the task of filling the forms
 
+## Demo
 
+## Screenshots
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-You can use the [editor on GitHub](https://github.com/anshul-iiitb16/Jobbot/edit/deploy/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/anshul-iiitb16/Jobbot/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
