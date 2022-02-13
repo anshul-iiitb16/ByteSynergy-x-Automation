@@ -10,10 +10,10 @@ Jobbot is a cutting edge app for a busy student/professional who does not need t
 
 Thus if you want to save time and apply for jobs smarter, then Jobbot is THE application for you!
 
-## Track
+## Track:
 Task Automation
 
-## Authors
+## Authors:
 Team Name - Room_Num_219
 - [Anshul Jindal](https://github.com/anshul-iiitb16)
 - [Mayank Chadha](https://github.com/mayankchadha16)
@@ -59,7 +59,7 @@ Team Name - Room_Num_219
 - Our Application can serve as a handy tool to create professional Resumes from a user's LinkedIn Profile.
 - We can import our Application to various Python Frameworks like Django and Flask.
 
-## Installation
+## Installation:
 
 Install Selenium library in Ubuntu
 
@@ -105,8 +105,13 @@ Install Tkinter library in Ubuntu
 		- Click Submit button
 		- Jobbot will automate the task of filling the forms
 
-## Demo
+## Demo:
 
-## Screenshots
+## Screenshots:
+### Application Screenshots -
+![Application Screenshot](https://user-images.githubusercontent.com/63835433/153752850-d8aee22b-e2b2-4bc5-b739-9bada1fa675d.png)
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![Application Screenshot](https://user-images.githubusercontent.com/63835433/153752853-833d3aa3-d4db-491d-a2fe-e3278cbd904a.png)
+
+### Example Resume built from our Application -
+![Example Resume](https://user-images.githubusercontent.com/63835433/153753018-458df3c3-8db1-4398-a7d2-e8240cf8b97b.png)
