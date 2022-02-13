@@ -95,15 +95,15 @@ Install Tkinter library in Ubuntu
 - By default, we are using Firefox WebDriver for Selenium. Make sure to install the latest version of Firefox before running the script.
 - Run Runner.py, and the Jobbot GUI will pop up.
 - If you want Jobbot to make you a resume:
-		- Click on the option "Create one."
-		- Fill in your LinkedIn credentials - both Username and Password
-		- Click on Create button
-		- Jobbot will create a new resume in its working directory and automate the task of filling the forms
+	- Click on the option "Create one."
+	- Fill in your LinkedIn credentials - both Username and Password
+	- Click on Create button
+	- Jobbot will create a new resume in its working directory and automate the task of filling the forms
 - If you prefer to use your own resume:
-		- Fill in your LinkedIn credentials - both Username and Password
-		- Click on the "browse" button and upload your resume
-		- Click Submit button
-		- Jobbot will automate the task of filling the forms
+	- Fill in your LinkedIn credentials - both Username and Password
+	- Click on the "browse" button and upload your resume
+	- Click Submit button
+	- Jobbot will automate the task of filling the forms
 
 ## Demo
 
