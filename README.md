@@ -1,4 +1,14 @@
-# ByteSynergy-x-Automation
+# Jobbot
+
+## DESCRIPTION:
+
+Jobbot is an application which makes applying for jobs easier. You only have to enter your Linkedin credentials, and Jobbot does the rest!
+
+Jobbot will essentially scan through your Linkedin profile, curate a high quality, professional resume just for you which gets auto downloaded into your system. Equipped with your Linkedin profile summary and your resume created, Jobbot applies to various well known job application websites by auto filling your details and uploading your resume, thereby saving you a lot of time. You are also given a choice to upload your own resume too. 
+
+Jobbot is a cutting edge app for a busy student/professional who does not need to  spend time seperately to create one's resume or apply for jobs due to its core functionality of creating a resume out of enriched Linkedin profile in real time. The feature of posting on to job portals further enhances its utility thereby letting job aspirants focus on subtler aspects of interview.
+
+Thus if you want to save time and apply for jobs smarter, then Jobbot is THE application for you!
 
 ## DETAILS:
 
