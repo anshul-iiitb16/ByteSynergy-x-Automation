@@ -10,15 +10,22 @@ Jobbot is a cutting edge app for a busy student/professional who does not need t
 
 Thus if you want to save time and apply for jobs smarter, then Jobbot is THE application for you!
 
+## Authors
+
+- [Anshul Jindal](https://github.com/anshul-iiitb16)
+- [Mayank Chadha](https://github.com/mayankchadha16)
+- [Shreeya Venneti](https://github.com/ShreeyaVenneti)
+- [Shridhar Sharma](https://github.com/Shridhar2602)
+
 ## DETAILS:
 
 1. Web Automation and Web Scraping are the key ideas for this project. Data from LinkedIn is scraped and used for resume building. Further, () job search sites are automated for filling of candidate's deatils along with uploading the resume.
 
-	list of job search sites automated:
-			- 1
-			- 2
-			- 3
-			- 4
+	List of job search sites automated:
+	- 1
+	- 2
+	- 3
+	- 4
 
 2. Only python programming language has been used in this project.
 
@@ -51,9 +58,31 @@ Thus if you want to save time and apply for jobs smarter, then Jobbot is THE app
 
 - We also plan to extend this application to be made available to Android and iOS devices in the future.
 
+## Installation
 
+Install Selenium library in Ubuntu
 
-## INSTRUCTIONS TO RUN THE CODE:
+```bash
+  $ sudo apt-get install python-pip
+  $ sudo pip install selenium
+```
+
+Install lxml library in Ubuntu
+
+```bash
+  $ sudo apt-get install python3-lxml
+```
+
+Install bs4 library in Ubuntu
+```bash
+  $ sudo apt-get install python3-bs4
+```
+
+Install matplotlib library in Ubuntu
+```bash
+  $ sudo apt-get install python3-matplotlib.
+```
+## Instructions to run the code:
 
 - Make sure ChromeDriver and all py files are in the same directory.
 - Run (----).py and the Jobbot GUI will pop up.
@@ -64,3 +93,14 @@ Thus if you want to save time and apply for jobs smarter, then Jobbot is THE app
 - If you prefer to upload a resume:
 		- Click on "browse" button and upload your resume.
 		- Click Enter button
+
+## Demo
+
+## Screenshots
+
+![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+
+
+## Feedback
+
+If you have any feedback, please reach out to us at anshuliiitb16@gmail.com.
