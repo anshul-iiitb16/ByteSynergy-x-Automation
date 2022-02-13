@@ -13,14 +13,14 @@
 2. Only python programming language has been used in this project.
 
 3. Libraries used:
-	- Matplotlib - For building the resume and saving it as a png image.
-	- Tkinter - To build GUI
-	- Selenium - For automating web browsing
-	- BeautifulSoup - For Web Scraping 
-	- Figma -
+	- Matplotlib - For building the resume from the LinkedIn data, and saving it as a png image
+	- Tkinter - To build Jobbot's GUI
+	- Selenium - To automate login to LinkedIn, button clicks and filling of fields in Job application websites
+	- BeautifulSoup - For web scraping the user's Linkedin profile information.
+	- Figma - 
 	
  
-4. Following Entities are scraped from LinedIn:
+4. Following fields are scraped from LinkedIn:
 	- Name
 	- Profile_URL
 	- Roles
