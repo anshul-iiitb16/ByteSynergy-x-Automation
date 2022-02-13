@@ -45,4 +45,3 @@ def web(mylist, loc):
 	#It will submit so dont uncomment
 	# submit = web_driver.find_element_by_xpath('//*[@id="submit-resume-form"]/p/input[5]')
 	# submit.click()
-
